@@ -12,9 +12,14 @@ body{
 
 #container{
 	margin: 0 auto;
-	width: 40%;
+	width: 45%;
 }
 
 h1{
 	color: white;
+	text-align: center;
+}
+
+.buttonHolder{
+	text-align: center;
 }

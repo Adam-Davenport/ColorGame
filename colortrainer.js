@@ -11,7 +11,7 @@ for (var i = 0; i < squares.length; i++) {
 	//Setup onclick listeners
 	squares[i].addEventListener("click", function(){
 		if(this.style.background === picked){
-			alert("Correct!")
+			winner();
 		}
 		else {
 			this.style.background = ("#232323");
@@ -50,4 +50,10 @@ function reset(){
 	setColors();
 	colorSquares();
 	pickColor();
+}
+
+function winner(){
+	for (var i = 0; i < squares.length; i++) {
+		squares[i].style.background = picked;
+	}
 }
