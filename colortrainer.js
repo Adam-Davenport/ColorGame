@@ -3,6 +3,8 @@ var colors = [];
 setColors();
 var squares = document.getElementsByClassName("square");
 var colorDisplay = document.getElementById("rgb");
+var easyButton = document.getElementById("easy");
+var hardButton = document.getElementById("hard");
 colorSquares();
 var picked;
 pickColor();
@@ -56,4 +58,14 @@ function winner(){
 	for (var i = 0; i < squares.length; i++) {
 		squares[i].style.background = picked;
 	}
+}
+
+function easy(){
+	easyButton.classList.add("selected");
+	hardButton.classList.remove("selected");
+}
+
+function hard(){
+	easyButton.classList.remove("selected");
+	hardButton.classList.add("selected");
 }

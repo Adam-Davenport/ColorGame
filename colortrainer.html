@@ -7,10 +7,14 @@
 </head>
 <body>
 <div class="buttonHolder">
-<h1><span id="rgb">RGB</span> Color Trainer</h1>
-	<button onclick="reset()">Reset</button>
+<h1><span id="rgb">RGB</span><br>Color Trainer</h1>
+<div id="stripe">
+		<button id="reset" onclick="reset()">Reset</button>
+		<span id="message"></span>
+		<button id="easy" onclick="easy()">Easy</button>
+		<button class="selected" id="hard" onclick="hard()">Hard</button>
 </div>
-	<div id="container">
+	<div class="container">
 		<div class="square"></div>
 		<div class="square"></div>
 		<div class="square"></div>
